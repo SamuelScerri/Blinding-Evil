@@ -1,4 +1,9 @@
-It's The Spooky Month!
-<br>
+Source Code of our Submission for the Spooky 2D Jam '22!
 
-![Spooky](https://user-images.githubusercontent.com/92179479/197226075-53d24d66-19b2-43df-8e3a-28eba49f88e1.png)
+Sound Effects Source:
+	 -https://opengameart.org/content/level-up-power-up-coin-get-13-sounds
+	 -https://opengameart.org/content/4-projectile-launches
+	 -https://opengameart.org/content/2-metal-weapon-clicks
+	 -Reshape Project - 8 - Bit Halloween Retro Spooky Chip Tunes Lo Fi
+
+Engine Used: Godot
