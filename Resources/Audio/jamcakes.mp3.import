@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jamcakes.mp3-fa05c6c8b20bb96b9a4aa82689d9e1e0.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/jamcakes.mp3"
+dest_files=[ "res://.import/jamcakes.mp3-fa05c6c8b20bb96b9a4aa82689d9e1e0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

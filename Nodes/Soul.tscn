@@ -1,0 +1,81 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scripts/Soul.gd" type="Script" id=1]
+[ext_resource path="res://Resources/Soul.png" type="Texture" id=2]
+[ext_resource path="res://Resources/SoulPart.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Audio/Coin01.mp3" type="AudioStream" id=4]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="Gradient" id=9]
+offsets = PoolRealArray( 0, 0.100559, 0.223464, 1 )
+colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.329609, 1, 1, 1, 0 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 1080, 1080 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 1080, 0, 1080, 1080 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 2160, 0, 1080, 1080 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 3240, 0, 1080, 1080 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 4320, 0, 1080, 1080 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 1080, 1080, 1080 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="Soul" type="Area2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 0, -1.13687e-13 )
+scale = Vector2( 0.0296296, 0.0296296 )
+amount = 25
+lifetime = 0.25
+local_coords = false
+texture = ExtResource( 3 )
+emission_shape = 1
+emission_sphere_radius = 30.0
+spread = 0.0
+gravity = Vector2( 0, 0 )
+scale_amount = 0.03
+color_ramp = SubResource( 9 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 0, -2.40741e-35 )
+scale = Vector2( 0.0296296, 0.0296296 )
+frames = SubResource( 8 )
+playing = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+pitch_scale = 0.9
+
+[connection signal="body_entered" from="." to="." method="_on_Soul_body_entered"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_AudioStreamPlayer_finished"]

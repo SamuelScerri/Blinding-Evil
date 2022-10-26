@@ -1,0 +1,37 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Resources/Bomb/BOMB01.png" type="Texture" id=1]
+[ext_resource path="res://Resources/Bomb/BOMB02.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Bomb/BOMB03.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Bomb/BOMB05.png" type="Texture" id=4]
+[ext_resource path="res://Resources/Bomb/BOMB06.png" type="Texture" id=5]
+[ext_resource path="res://Resources/Bomb/BOMB07.png" type="Texture" id=6]
+[ext_resource path="res://Resources/Bomb/BOMB04.png" type="Texture" id=7]
+[ext_resource path="res://Resources/Bomb/BOMB09.png" type="Texture" id=8]
+[ext_resource path="res://Resources/Bomb/BOMB12.png" type="Texture" id=9]
+[ext_resource path="res://Resources/Bomb/BOMB15.png" type="Texture" id=10]
+[ext_resource path="res://Resources/Bomb/BOMB08.png" type="Texture" id=11]
+[ext_resource path="res://Resources/Bomb/BOMB11.png" type="Texture" id=12]
+[ext_resource path="res://Resources/Bomb/BOMB14.png" type="Texture" id=13]
+[ext_resource path="res://Resources/Bomb/BOMB13.png" type="Texture" id=14]
+[ext_resource path="res://Resources/Bomb/BOMB10.png" type="Texture" id=15]
+[ext_resource path="res://Nodes/Bomb.gd" type="Script" id=16]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 11 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 12 ), ExtResource( 9 ), ExtResource( 14 ), ExtResource( 13 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="Bomb" type="Node2D"]
+z_index = 10
+script = ExtResource( 16 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -4.76837e-07, -4.76837e-07 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+frame = 8
+playing = true

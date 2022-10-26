@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/To Jam Again - Finale (I Think...).mp3-75b004659bb9d84109724801c70ea899.mp3str"
+
+[deps]
+
+source_file="res://To Jam Again - Finale (I Think...).mp3"
+dest_files=[ "res://.import/To Jam Again - Finale (I Think...).mp3-75b004659bb9d84109724801c70ea899.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=48.5

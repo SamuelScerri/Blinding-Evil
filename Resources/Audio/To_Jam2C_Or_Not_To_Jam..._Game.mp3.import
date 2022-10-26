@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/To_Jam2C_Or_Not_To_Jam..._Game.mp3-1705005d90bff0a5969f3a2e490c1102.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/To_Jam2C_Or_Not_To_Jam..._Game.mp3"
+dest_files=[ "res://.import/To_Jam2C_Or_Not_To_Jam..._Game.mp3-1705005d90bff0a5969f3a2e490c1102.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

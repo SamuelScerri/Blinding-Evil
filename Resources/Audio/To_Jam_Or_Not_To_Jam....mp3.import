@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/To_Jam_Or_Not_To_Jam....mp3-7381ff58a9c647ceb637612dc17badf0.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/To_Jam_Or_Not_To_Jam....mp3"
+dest_files=[ "res://.import/To_Jam_Or_Not_To_Jam....mp3-7381ff58a9c647ceb637612dc17badf0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
